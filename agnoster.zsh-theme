@@ -156,7 +156,7 @@ prompt_agnoster_precmd() {
   PROMPT='%{%f%b%k%}$(prompt_agnoster_main) '
 }
 
-prompt_agnoster_setup() {
+prompt_agnoster-custom_setup() {
   autoload -Uz add-zsh-hook
   autoload -Uz vcs_info
 
@@ -170,4 +170,4 @@ prompt_agnoster_setup() {
   zstyle ':vcs_info:git*' actionformats '%b (%a)'
 }
 
-prompt_agnoster_setup "$@"
+prompt_agnoster-custom_setup "$@"
