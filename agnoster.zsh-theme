@@ -73,7 +73,7 @@ prompt_end() {
   else
     print -n "%{%k%}"
   fi
-  print -n "%{%f%}"
+  print -n " %{%f%} \n%B%F{1}❯%F{5}❯%F{4}❯%f%b "
   CURRENT_BG=''
 }
 
